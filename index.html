@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13 Porquês de Eu Te Amar</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            display: none; /* Inicialmente oculto */
+            margin-top: 10px;
+        }
+        .menu li {
+            margin-bottom: 10px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .menu a:hover {
+            text-decoration: underline;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>13 Porquês de Eu Te Amar</h1>
+    </header>
+    <section class="content">
+        <p>Bem-vinda, Ana Beatriz! Aqui estão os 13 motivos pelos quais eu te amo...</p>
+        <button class="btn" onclick="navigateTo('inteligencia.html')">Começar</button>
+        <button class="btn" onclick="toggleMenu()">Sumário</button>
+        <ul class="menu" id="menu">
+            <li><a href="inteligencia.html">Inteligência</a></li>
+            <li><a href="beleza.html">Beleza</a></li>
+            <li><a href="dedicacao.html">Dedicação</a></li>
+            <li><a href="carinho.html">Carinho</a></li>
+            <li><a href="sorriso.html">Sorriso</a></li>
+            <li><a href="alegria.html">Alegria</a></li>
+            <li><a href="voz.html">Voz</a></li>
+            <li><a href="coragem.html">Coragem</a></li>
+            <li><a href="humor.html">Humor</a></li>
+            <li><a href="jeito-de-amar.html">Jeito de Amar</a></li>
+            <li><a href="qualidades.html">Qualidades</a></li>
+            <li><a href="personalidade.html">Personalidade</a></li>
+            <li><a href="futuro.html">Futuro</a></li>
+            <li><a href="final.html">Final</a></li>
+            <li><a href="finale.html">Finale</a></li>
+        </ul>
+    </section>
+    <footer>
+        <p>Feito com amor por Tales da Silva Marques Rocha</p>
+    </footer>
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'none') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
